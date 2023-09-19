@@ -4,7 +4,7 @@ Cyan='\033[0;36m'
 Default='\033[0;m'
 
 versionNum=""
-privatePodsName=""
+privatePodsName="TestPrivateSpecs"
 projectName=""
 confirmed="n"
 
@@ -60,6 +60,6 @@ done
 git add .
 git commit -m ${versionNum}
 git tag ${versionNum}
-git push origin master --tags
+git push origin main --tags
 pod spec lint ${projectName}.podspec --use-libraries
 pod repo push ${privatePodsName} ${projectName}.podspec --verbose --allow-warnings --use-libraries

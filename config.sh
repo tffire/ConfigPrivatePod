@@ -96,6 +96,8 @@ sed -i "" "s%__ProjectName__%${projectName}%g" "$podfilePath"
 sed -i "" "s%__ProjectName__%${projectName}%g" "$specFilePath"
 sed -i "" "s%__HomePage__%${homePage}%g"      "$specFilePath"
 sed -i "" "s%__HTTPSRepo__%${httpsRepo}%g"    "$specFilePath"
+sed -i "" "s%__SSHRepo__%${sshRepo}%g"    "$specFilePath"
+
 echo "edit finished"
 
 echo "cleaning..."
